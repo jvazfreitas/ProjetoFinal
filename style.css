@@ -1,0 +1,147 @@
+html {
+  height: 100%;
+  width: 100%;
+  background: rgb(51, 139, 111);
+}
+
+body {
+  padding: 10px;
+  background: rgb(51, 139, 111);
+  background: linear-gradient(180deg, rgba(51, 139, 111, 0.9990371148459384) 1%, rgba(0, 0, 0, 0.9906337535014006) 97%)
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .logo {
+    height: 100px;
+    width: auto
+  }
+
+  div img {
+    padding: 10px;
+    height: 100px;
+    width: 110px;
+    border-radius: 50%;
+  }
+
+  .text {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    position: center;
+    font-size: 50px;
+    color: silver;
+    font-family: "Protest Revolution", sans-serif;
+  }
+}
+
+nav {
+  grid-area: nav;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-evenly;
+
+  button {
+    text-align: center;
+    height: 2rem;
+    width: 6rem;
+    background-color: rgba(51, 139, 111, 0.9990371148459384);
+  }
+
+  a:link {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  a:active {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  button:hover {
+    background: teal;
+  }
+}
+
+section {
+  grid-area: section;
+  color: white;
+
+  h2 {
+    color: silver;
+  }
+
+  h3 {
+    color: silver;
+  }
+
+}
+
+aside {
+  grid-area: aside;
+  color: white;
+
+  h1 {
+    color: silver;
+  }
+
+  .carousel-item img {
+    display: flex;
+    flex-direction: row;
+    object-fit: contain;
+    height: 400px;
+    width: auto;
+    justify-content: center;
+  }
+
+  .carousel-control-prev {
+    height: 400px;
+    width: 100px;
+  }
+
+  .carousel-control-next {
+    height: 400px;
+    width: 100px;
+  }
+}
+
+footer {
+  grid-area: footer;
+  color: white;
+  background-color: black;
+
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-rows: 1fr 1fr 3fr 2fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "aside aside aside aside"
+      "section section section section"
+      "footer footer footer footer";
+  }
+}
