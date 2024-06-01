@@ -83,7 +83,7 @@ nav {
   }
 }
 
-section {
+section article{
   grid-area: section;
   color: white;
   
