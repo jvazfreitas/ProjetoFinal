@@ -87,7 +87,7 @@ section {
   grid-area: section;
   color: white;
   
-  article img{
+  .image{
     height: 500px;
     width: 600px;
     display: flex;
