@@ -86,7 +86,11 @@ nav {
 section {
   grid-area: section;
   color: white;
-
+  
+  img{
+    height: 500px;
+    width: 600px;
+  
   h2 {
     color: silver;
   }
