@@ -90,6 +90,9 @@ section {
   article img{
     height: 500px;
     width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   
   h2 {
     color: silver;
