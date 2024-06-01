@@ -83,11 +83,11 @@ nav {
   }
 }
 
-section article{
+section {
   grid-area: section;
   color: white;
   
-  img{
+  article img{
     height: 500px;
     width: 600px;
   
