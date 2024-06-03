@@ -107,6 +107,8 @@ section {
 aside {
   grid-area: aside;
   color: white;
+  height: 500px;
+  width: 600px;
 
   h1 {
     color: silver;
