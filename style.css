@@ -1,13 +1,12 @@
 html {
   height: 100%;
   width: 100%;
-  background: rgb(51, 139, 111);
+  background: rgb(129, 131, 131);
 }
 
 body {
-  padding: 10px;
-  background: rgb(51, 139, 111);
-  background: linear-gradient(180deg, rgba(51, 139, 111, 0.9990371148459384) 1%, rgba(0, 0, 0, 0.9906337535014006) 97%)
+  background: rgb(129, 131, 131);
+  background: linear-gradient(180deg, rgba(129, 131, 131, 0.9990371148459384) 1%, rgba(0, 0, 0, 0.9906337535014006) 97%);
 }
 
 header {
@@ -15,6 +14,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-image: url("https://st5.depositphotos.com/3854517/62414/v/600/depositphotos_624146438-stock-illustration-runic-black-seamless-pattern-white.jpg");
+
+
 
   .logo {
     height: 100px;
@@ -34,7 +36,7 @@ header {
     flex-direction: row;
     position: center;
     font-size: 50px;
-    color: silver;
+    color: #f8d92a;
     font-family: "Protest Revolution", sans-serif;
   }
 }
@@ -46,72 +48,73 @@ nav {
   flex-direction: row;
   gap: 10px;
   justify-content: space-evenly;
+  background-image: url("https://st5.depositphotos.com/3854517/62414/v/600/depositphotos_624146438-stock-illustration-runic-black-seamless-pattern-white.jpg");
+
 
   button {
     text-align: center;
     height: 2rem;
     width: 6rem;
-    background-color: rgba(51, 139, 111, 0.9990371148459384);
+    background-color: #2f2d2d;
   }
 
   a:link {
-    color: white;
+    color: gold;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
   }
 
   a:visited {
-    color: white;
+    color: gold;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
   }
 
   a:hover {
-    color: white;
+    color: gold;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
   }
 
   a:active {
-    color: white;
+    color: gold;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
   }
 
   button:hover {
-    background: teal;
+    background: gray;
   }
 }
 
 section {
+  padding-left: 10px;
   grid-area: section;
   color: white;
-  
-  .image{
-    height: 500px;
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  
+  justify-content: space-evenly;
+
   h2 {
-    color: silver;
+    color: gold;
+    padding-left: 15px;
   }
 
   h3 {
-    color: silver;
+    color: gold;
+    padding-left: 15px;
   }
 
 }
 
 aside {
+  background-image: url("https://st2.depositphotos.com/12010552/45450/v/380/depositphotos_454503430-stock-illustration-celtic-scandinavian-design-old-norse.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1467px 400px;
   grid-area: aside;
   color: white;
-  height: 500px;
-  width: 600px;
 
   h1 {
-    color: silver;
+    color: gold;
   }
 
   .carousel-item img {
@@ -141,16 +144,15 @@ footer {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 900px) {
   html {
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-rows: 1fr 1fr 3fr 2fr 1fr;
     grid-template-areas:
-      "header header header header"
-      "nav nav nav nav"
-      "aside aside aside aside"
-      "section section section section"
-      "footer footer footer footer";
+      "header header header"
+      "nav nav nav "
+      "aside aside aside "
+      "section section section"
+      "footer footer footer";
   }
 }
