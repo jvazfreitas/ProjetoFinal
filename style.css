@@ -88,10 +88,18 @@ nav {
 }
 
 section {
+  padding-top: 10px;
   padding-left: 10px;
   grid-area: section;
   color: white;
 
+  .context {
+    display: flex;
+    align-self: center;
+    padding-left: px;
+    height: 500px;
+    width: 600px;
+  }
 
   h2 {
     color: gold;
@@ -102,14 +110,14 @@ section {
     color: gold;
     padding-left: 15px;
   }
-
 }
+
 
 aside {
   grid-area: aside;
   color: white;
   background-color: #707171 
-  
+} 
   h1 {
     color: gold;
   }
@@ -132,7 +140,7 @@ aside {
     height: 400px;
     width: 100px;
   }
-}
+
 
 footer {
   grid-area: footer;
