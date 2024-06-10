@@ -106,9 +106,10 @@ section {
 }
 
 aside {
-  background-color: #707171 grid-area: aside;
+  grid-area: aside;
   color: white;
-
+  background-color: #707171 
+  
   h1 {
     color: gold;
   }
